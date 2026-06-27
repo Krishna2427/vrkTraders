@@ -1,4 +1,4 @@
-import { Leaf, Phone, Mail } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import type { LanguageDictionary } from '../types';
 
 interface FooterProps {
