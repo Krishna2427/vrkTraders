@@ -13,8 +13,13 @@ export default function Footer({ scrollTo, t }: FooterProps) {
       <div className="container">
         <div className="footer-top">
           <div>
-            <div className="footer-logo" onClick={() => scrollTo('home')} style={{ cursor: 'pointer' }}>
-              <img src={logoImg} alt="VRK traders Logo" style={{ height: '70px', objectFit: 'contain', mixBlendMode: 'multiply' }} />
+            <div className="footer-logo" onClick={() => scrollTo('home')} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+              <div className="logo-image-wrapper">
+                <img src={logoImg} alt="VRK traders Logo" className="logo-image" style={{ height: '60px' }} />
+              </div>
+              <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: 'var(--text-light)', letterSpacing: '1px', marginTop: '12px' }}>
+                QUALITY • TRUST • FRESHNESS<br/>COCONUT TRADING & SUPPLY
+              </span>
             </div>
             <p className="footer-tagline">{t.footerTagline}</p>
           </div>

@@ -28,8 +28,10 @@ export default function Header({
       <header className={`header glassmorphism ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container header-container">
           <div className="logo" onClick={() => scrollTo('home')}>
-            <img src={logoImg} alt="VRK traders Logo" className="logo-image" />
-            <span className="logo-caption">{t.logoCaption}</span>
+            <div className="logo-image-wrapper">
+              <img src={logoImg} alt="VRK traders Logo" className="logo-image" />
+            </div>
+            <span className="logo-caption">QUALITY • TRUST • FRESHNESS</span>
           </div>
 
           {/* Desktop Navigation Links */}
