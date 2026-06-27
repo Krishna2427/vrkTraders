@@ -10,14 +10,15 @@
   height: 80px;
   display: flex;
   align-items: center;
+  background: #ffffff;
   border-bottom: 1px solid var(--border-color);
-  transition: background-color 0.3s ease, border-color 0.3s ease, height 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease, height 0.3s ease, box-shadow 0.3s ease;
 }
 
 .header.scrolled {
   height: 70px;
-  background: var(--bg-glass);
-  box-shadow: var(--shadow-sm);
+  background: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {

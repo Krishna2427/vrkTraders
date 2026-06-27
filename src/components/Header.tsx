@@ -25,7 +25,7 @@ export default function Header({
 }: HeaderProps) {
   return (
     <>
-      <header className={`header glassmorphism ${isScrolled ? 'scrolled' : ''}`}>
+      <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container header-container">
           <div className="logo" onClick={() => scrollTo('home')}>
             <img src={logoImg} alt="VRK traders Logo" className="logo-image" />
