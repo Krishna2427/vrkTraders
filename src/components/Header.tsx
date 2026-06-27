@@ -1,4 +1,5 @@
 import { Globe, Menu, X } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import type { LanguageDictionary } from '../types';
 
 interface HeaderProps {
@@ -27,7 +28,7 @@ export default function Header({
       <header className={`header glassmorphism ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container header-container">
           <div className="logo" onClick={() => scrollTo('home')}>
-            <img src="/logo.png" alt="VRK traders Logo" className="logo-image" />
+            <img src={logoImg} alt="VRK traders Logo" className="logo-image" />
             <span className="logo-caption">{t.logoCaption}</span>
           </div>
 

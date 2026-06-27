@@ -1,5 +1,6 @@
 import { Phone, Mail } from 'lucide-react';
 import type { LanguageDictionary } from '../types';
+import logoImg from '../assets/logo.png';
 
 interface FooterProps {
   scrollTo: (id: string) => void;
@@ -13,7 +14,7 @@ export default function Footer({ scrollTo, t }: FooterProps) {
         <div className="footer-top">
           <div>
             <div className="footer-logo" onClick={() => scrollTo('home')} style={{ cursor: 'pointer' }}>
-              <img src="/logo.png" alt="VRK traders Logo" style={{ height: '40px', objectFit: 'contain' }} />
+              <img src={logoImg} alt="VRK traders Logo" style={{ height: '40px', objectFit: 'contain' }} />
               <span>VRK traders</span>
             </div>
             <p className="footer-tagline">{t.footerTagline}</p>
