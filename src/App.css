@@ -44,6 +44,8 @@
   height: 95px;
   width: auto;
   object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) brightness(1.05);
   transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -1525,6 +1527,16 @@ textarea.form-control {
 }
 
 @media (max-width: 768px) {
+  .header {
+    background: #ffffff !important;
+    min-height: 70px !important;
+    padding: 5px 0 !important;
+  }
+  
+  .logo-image {
+    height: 55px !important;
+  }
+
   .footer-top {
     flex-direction: column;
     text-align: center;
