@@ -35,26 +35,20 @@
   text-decoration: none;
 }
 
-.logo-image-wrapper {
-  background: white;
-  padding: 4px 12px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.logo-text {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--primary-dark);
+  font-family: serif;
+  letter-spacing: 2px;
+  line-height: 1;
+  text-shadow: 0 2px 4px rgba(27, 94, 32, 0.15);
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.logo-image {
-  height: 55px;
-  width: auto;
-  object-fit: contain;
-}
-
-.logo:hover .logo-image-wrapper {
+.logo:hover .logo-text {
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  color: var(--primary);
 }
 
 .logo-caption {

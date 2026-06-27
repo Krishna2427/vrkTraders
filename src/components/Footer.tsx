@@ -1,6 +1,5 @@
 import { Phone, Mail } from 'lucide-react';
 import type { LanguageDictionary } from '../types';
-import logoImg from '../assets/logo.png';
 
 interface FooterProps {
   scrollTo: (id: string) => void;
@@ -13,10 +12,8 @@ export default function Footer({ scrollTo, t }: FooterProps) {
       <div className="container">
         <div className="footer-top">
           <div>
-            <div className="footer-logo" onClick={() => scrollTo('home')} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-              <div className="logo-image-wrapper">
-                <img src={logoImg} alt="VRK traders Logo" className="logo-image" style={{ height: '60px' }} />
-              </div>
+            <div className="footer-logo logo" onClick={() => scrollTo('home')} style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+              <div className="logo-text">VRK</div>
               <span style={{ fontSize: '0.75rem', fontWeight: 'bold', color: 'var(--text-light)', letterSpacing: '1px', marginTop: '12px' }}>
                 QUALITY • TRUST • FRESHNESS<br/>COCONUT TRADING & SUPPLY
               </span>
