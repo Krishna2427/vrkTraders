@@ -35,20 +35,18 @@
   text-decoration: none;
 }
 
-.logo-text {
-  font-size: 2.8rem;
-  font-weight: 900;
-  color: var(--primary-dark);
-  font-family: serif;
-  letter-spacing: 2px;
-  line-height: 1;
-  text-shadow: 0 2px 4px rgba(27, 94, 32, 0.15);
-  transition: transform 0.3s ease, color 0.3s ease;
+.logo-image {
+  height: 65px;
+  width: auto;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+  filter: contrast(1.1) brightness(1.05);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.logo:hover .logo-text {
+.logo:hover .logo-image {
   transform: translateY(-2px);
-  color: var(--primary);
+  filter: contrast(1.1) brightness(1.05) drop-shadow(0 4px 12px rgba(27, 94, 32, 0.25));
 }
 
 .logo-caption {
