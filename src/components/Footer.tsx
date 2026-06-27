@@ -14,8 +14,7 @@ export default function Footer({ scrollTo, t }: FooterProps) {
         <div className="footer-top">
           <div>
             <div className="footer-logo" onClick={() => scrollTo('home')} style={{ cursor: 'pointer' }}>
-              <img src={logoImg} alt="VRK traders Logo" style={{ height: '40px', objectFit: 'contain' }} />
-              <span>VRK traders</span>
+              <img src={logoImg} alt="VRK traders Logo" style={{ height: '70px', objectFit: 'contain', mixBlendMode: 'multiply' }} />
             </div>
             <p className="footer-tagline">{t.footerTagline}</p>
           </div>
