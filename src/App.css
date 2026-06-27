@@ -32,8 +32,9 @@
 
 .logo {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  gap: 16px;
   cursor: pointer;
   text-decoration: none;
 }
@@ -48,13 +49,14 @@
 }
 
 .logo-caption {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
   color: var(--primary-dark);
-  margin-top: 16px;
-  text-align: center;
-  display: block;
+  margin-top: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-links {
